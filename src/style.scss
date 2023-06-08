@@ -1,0 +1,145 @@
+@import url("./assets/font/font.scss");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "font";
+}
+
+.line {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.item {
+  width: 80px;
+  height: 79px;
+  font-size: 48px;
+  border-radius: 5px;
+  outline: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  outline-color: red;
+}
+
+
+.have {
+  background-color: orange;
+  outline: none;
+}
+
+.done {
+  background-color: green;
+  color: white;
+  outline: none;
+}
+
+.none {
+  background-color: #e0e0e0;
+  outline: none;
+}
+
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.block > div {
+  width: 200px;
+  border: 1px solid black
+}
+
+.toast {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+  padding: 20px;
+
+  min-width: 200px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+    &__title {
+      font-weight: bold;
+    }
+
+    &__exit {
+      transform: rotate(45deg);
+      font-weight: bold;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+
+  &__body {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px
+}
+
+.key-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 59px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.2s;
+  box-shadow: 1px 1px 0px 0px #57575766;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-bar button {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px
+}
+
+.ent {
+  background-color: rgb(200, 200, 200);
+}

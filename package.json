@@ -1,0 +1,21 @@
+{
+  "name": "woordle",
+  "version": "1.0.0",
+  "description": "Template Orve,",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.2",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "orve": "^0.24.0"
+  }
+}
