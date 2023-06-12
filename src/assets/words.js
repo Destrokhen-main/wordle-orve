@@ -8,7 +8,7 @@ export function getRandomWord() {
 }
 
 export function checkExistWord(word) {
-  return words.filter((e) => e === word).length > 0;
+  return words.filter((e) => e === word).length > 0 || allowedGuesses.filter((e) => e === word).length > 0;
 }
 
 const words = [
